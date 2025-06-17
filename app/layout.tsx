@@ -8,9 +8,11 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Instituto Luar - Centro Médico Integrado",
-  description: "Centro Médico Integrado dedicado à excelência em estética avançada e saúde.",
-    generator: 'v0.dev'
+  title: "Clínica de Estética e Nutrologia em Fortaleza | Instituto Luar",
+  description: "Instituto Luar, sua clínica de estética avançada no Cambeba, Fortaleza. Oferecemos harmonização facial, nutrologia, endolaser e mais. Agende sua avaliação!",
+  generator: 'v0.dev',
+  keywords: ["clínica de estética fortaleza", "nutrologia fortaleza", "harmonização facial fortaleza", "endolaser", "bioestimulador de colágeno", "emagrecimento cambeba"],
+  authors: [{ name: "Instituto Luar" }],
 }
 
 export default function RootLayout({
@@ -20,6 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={inter.className}>
         <Header />
         <main className="pt-20">{children}</main>
